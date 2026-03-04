@@ -1,0 +1,66 @@
+{
+  "displayName": "Able",
+  "defaultLanguageCode": "en",
+  "timeZone": "America/New_York",
+  "enableLogging": true,
+  "projectNumber": 542947590541,
+  "speechToTextSettings": {
+  
+  },
+  "startFlow": "Default Start Flow",
+  "enableStackdriverLogging": true,
+  "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      }
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+      "enableStackdriverLogging": true,
+      "enableInteractionLogging": true
+    },
+    "speechAdaptationSettings": {
+    
+    }
+  },
+  "speakerIdSettings": {
+  
+  },
+  "customPayloadTemplates": [ {
+    "displayName": "Suggestion Choice Chips",
+    "payload": {
+      "richContent": [ {
+        "suggestion_chips": [ {
+          "text": "",
+          "value": ""
+        }, {
+          "text": "",
+          "value": ""
+        }, {
+          "text": "",
+          "value": ""
+        } ],
+        "type": "chips"
+      } ]
+    }
+  } ],
+  "genAppBuilderSettings": {
+    "engine": "projects/542947590541/locations/global/collections/default_collection/engines/eb760319-b786-4bad-abce-9a65be5c5add-chat-1752525495"
+  },
+  "duplexSettings": {
+  
+  },
+  "answerFeedbackSettings": {
+    "enableAnswerFeedback": true
+  },
+  "webClientSettings": {
+    "boxBorderRadius": "0"
+  }
+}

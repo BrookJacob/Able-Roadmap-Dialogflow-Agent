@@ -1,0 +1,83 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "condition": "$session.params.continuationFlow = null OR $session.params.continuationFlow = false",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hi! How are you doing?", "Hello! How can I help you?", "Good day! What can I do for you today?", "Greetings! How can I assist?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "edb6f2e8-790f-4d8a-b263-9063cbd6467a"
+  }, {
+    "condition": "$session.params.continuationFlow = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Financial Review Page",
+    "name": "e0b87d79-aaeb-4758-9583-458d000be22f"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "enableGenerativeFallback": true
+    },
+    "name": "a38754a7-ddb4-450e-89b3-5deddebaf9aa"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "86be8230-2523-44bf-a827-a35c8a38923f"
+  }, {
+    "targetPage": "Greeting Router Page",
+    "event": "start-daily-checkin",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "triggerContinuationFlow",
+        "value": true
+      } ]
+    },
+    "name": "1b7bff33-a088-4042-8171-b39393ed8f6f"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC"
+  },
+  "advancedSettings": {
+    "enabled": true
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "modelTrainingMode": "MODEL_TRAINING_MODE_AUTOMATIC",
+    "customConfigKey": "8117314a-868b-4a4a-912c-ad721ef8f86e",
+    "languageCode": "en"
+  } ],
+  "inputParameterDefinitions": [ {
+    "name": "contiuationFlow",
+    "description": "Determines whether the flow should route to a continuing page from where the playbook was called.",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "BOOLEAN"
+      }
+    },
+    "parameterType": {
+      "name": "contiuationFlow",
+      "openapiJsonSchema": {
+        "type": "boolean"
+      }
+    }
+  } ]
+}

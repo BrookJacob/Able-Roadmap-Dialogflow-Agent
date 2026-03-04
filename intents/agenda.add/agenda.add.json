@@ -1,0 +1,7 @@
+{
+  "name": "518af2d2-1a36-43d0-9c6e-bafadcddc1e5",
+  "displayName": "agenda.add",
+  "priority": 500000,
+  "description": "This intent is triggered when a user wants to add a new event to their calendar.",
+  "numTrainingPhrases": 19
+}

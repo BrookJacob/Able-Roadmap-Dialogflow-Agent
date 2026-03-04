@@ -1,0 +1,7 @@
+{
+  "name": "7ab0d343-a705-4340-90e0-01a92ba95e24",
+  "displayName": "agenda.next",
+  "priority": 500000,
+  "description": "This intent is triggered when a user wants to move on with going over their agenda.",
+  "numTrainingPhrases": 15
+}

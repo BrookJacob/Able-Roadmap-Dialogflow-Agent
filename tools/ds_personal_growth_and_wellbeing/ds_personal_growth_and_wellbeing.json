@@ -1,0 +1,41 @@
+{
+  "name": "e413e665-a23c-4db7-b1f9-eff324320e1d",
+  "displayName": "ds_personal_growth_and_wellbeing",
+  "description": "Use this data store for questions related to personal development, emotional health, and building soft skills. It provides guidance on improving mindsets, managing emotions, overcoming mental blocks, and strengthening interpersonal relationships.",
+  "dataStoreSpec": {
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/542947590541/locations/global/collections/default_collection/dataStores/ds-personal-growth-and-wellbeing_1753386565521",
+      "documentProcessingMode": "CHUNKS",
+      "engineType": "CHAT_ENGINE",
+      "connectorConfig": {
+      
+      },
+      "createTime": {
+        "seconds": 1753386576,
+        "nanos": 540487000
+      },
+      "displayName": "ds_personal_growth_and_wellbeing",
+      "dialogflowAddTime": {
+        "seconds": 1753386699,
+        "nanos": 620000000
+      }
+    } ],
+    "models": {
+      "summarizationModel": {
+        "model": "default"
+      },
+      "rewriterModel": {
+        "model": "default"
+      }
+    },
+    "groundingSettings": {
+    
+    },
+    "payloadSettings": {
+    
+    },
+    "mode": "MODE_DEFAULT"
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

@@ -1,0 +1,75 @@
+{
+  "name": "7618e9d4-ac58-45a0-af60-367c82f5df18",
+  "displayName": "ds_unified",
+  "description": "Use this data store to find practical advice on managing daily life, planning for the future, and improving productivity. It covers topics like time management, work-life balance, and making major life decisions.\nUse this data store for questions related to personal development, emotional health, and building soft skills. It provides guidance on improving mindsets, managing emotions, overcoming mental blocks, and strengthening interpersonal relationships.\nUse this data store to answer questions about personal finance, money management, and basic economic principles. It contains information on topics like budgeting, saving, debt, credit, and investing, helping users make informed financial decisions. Never give specific advice on investing.",
+  "dataStoreSpec": {
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/542947590541/locations/global/collections/default_collection/dataStores/ds-financial-lit-and-economics_1753385886216",
+      "documentProcessingMode": "CHUNKS",
+      "engineType": "CHAT_ENGINE",
+      "connectorConfig": {
+      
+      },
+      "createTime": {
+        "seconds": 1753385885,
+        "nanos": 690230000
+      },
+      "displayName": "ds_financial_lit_and_economics",
+      "dialogflowAddTime": {
+        "seconds": 1754341989,
+        "nanos": 611000000
+      }
+    }, {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/542947590541/locations/global/collections/default_collection/dataStores/ds-life-planning-and-productivity_1753386481034",
+      "documentProcessingMode": "CHUNKS",
+      "engineType": "CHAT_ENGINE",
+      "connectorConfig": {
+      
+      },
+      "createTime": {
+        "seconds": 1753386481,
+        "nanos": 239692000
+      },
+      "displayName": "ds_life_planning_and_productivity",
+      "dialogflowAddTime": {
+        "seconds": 1754341989,
+        "nanos": 611000000
+      }
+    }, {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/542947590541/locations/global/collections/default_collection/dataStores/ds-personal-growth-and-wellbeing_1753386565521",
+      "documentProcessingMode": "CHUNKS",
+      "engineType": "CHAT_ENGINE",
+      "connectorConfig": {
+      
+      },
+      "createTime": {
+        "seconds": 1753386576,
+        "nanos": 540487000
+      },
+      "displayName": "ds_personal_growth_and_wellbeing",
+      "dialogflowAddTime": {
+        "seconds": 1754341989,
+        "nanos": 611000000
+      }
+    } ],
+    "models": {
+      "summarizationModel": {
+        "model": "default"
+      },
+      "rewriterModel": {
+        "model": "default"
+      }
+    },
+    "groundingSettings": {
+    
+    },
+    "payloadSettings": {
+    
+    },
+    "mode": "MODE_DEFAULT"
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

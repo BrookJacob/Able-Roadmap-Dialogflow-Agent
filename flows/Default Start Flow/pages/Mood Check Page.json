@@ -1,0 +1,58 @@
+{
+  "name": "4c833587-1a89-422b-bb36-c6993d295790",
+  "displayName": "Mood Check Page",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "mood.positive",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Glad to hear that!", "Awesome!", "Fantastic! Let's build on that.", "I'm glad you're doing well.", "Love the energy!", "Excellent!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Do you have a moment to get organized?", "Ready to channel that good energy into getting organized?", "How about we get organized for a few minutes?", "Want to quickly get organized?", "While you're on a roll, should we organize a few things?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agenda Review Page",
+    "name": "f6b9261b-84d5-492a-9a0e-abc547bce814",
+    "description": "This route handles mood.positive intents and transitions to the Agenda Review Page."
+  }, {
+    "intent": "mood.neutral",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Alright. Ready to get started with some organization?", "Understood. If now is a good time, we can get organized.", "Okay, noted. Shall we proceed with getting organized?", "I hear you. Do you have some time now to get organized?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agenda Review Page",
+    "name": "030ba371-d01e-4f9a-89ec-7a0f4d8013f6",
+    "description": "This route handles mood.neutral intents and transitions to the Agenda Review Page."
+  }, {
+    "intent": "mood.negative",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I'm sorry to hear that.", "That doesn't sound easy.", "Hopefully things get better.", "Hang in there." ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Sometimes checking a task off a list can help. Want to get organized?", "Would a simple task like getting organized help at all?", "If you'd like a distraction, we could get organized for a bit.", "Maybe focusing on a small goal can help. Do you have a moment to get organized?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Agenda Review Page",
+    "name": "268a7405-521a-4a47-9fde-330a6fae2235",
+    "description": "This route handles mood.negative intents and transitions to the Agenda Review Page."
+  } ],
+  "description": "This page returns an appropriate acknowledgement of the user's mood and transitions to the Agenda Review Page."
+}

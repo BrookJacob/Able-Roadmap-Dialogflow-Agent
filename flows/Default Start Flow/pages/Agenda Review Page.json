@@ -1,0 +1,32 @@
+{
+  "name": "4044c0ab-3da6-4e3b-8c22-35cd47d8351c",
+  "displayName": "Agenda Review Page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "get_agenda",
+    "tag": "get_agenda"
+  },
+  "transitionRoutes": [ {
+    "intent": "agenda.next",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Great!", "All good then!", "That's great!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Financial Review Page",
+    "name": "90d4d1f6-b99d-4601-bf4a-d15c86241c81",
+    "description": "This transitions the user from the Agenda Review Page to the Financial Review Page"
+  }, {
+    "intent": "agenda.add",
+    "triggerFulfillment": {
+    
+    },
+    "name": "8eef32de-d145-413d-99ff-3f0d70941dea",
+    "targetPlaybook": "Event Scheduler"
+  } ]
+}

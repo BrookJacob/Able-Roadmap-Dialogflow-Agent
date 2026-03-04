@@ -1,0 +1,17 @@
+{
+  "name": "a7550692-beb4-4d8d-9ae5-2aad4fc3d85e",
+  "displayName": "empathetic_coach_generator",
+  "placeholders": [ {
+    "id": "raw_answer",
+    "name": "raw_answer"
+  } ],
+  "modelParameter": {
+    "temperature": 0.5,
+    "maxDecodeSteps": 256,
+    "topP": 0.94999999,
+    "topK": 40
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.0-flash-lite-001"
+  }
+}

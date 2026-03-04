@@ -1,0 +1,290 @@
+{
+  "name": "2b24b7b7-5329-445d-8ec5-6c7c7965e7b8",
+  "displayName": "Greeting Router Page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "setParameterActions": [ {
+      "parameter": "trigger_greeting",
+      "value": true
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.firstName != null AND $session.params.timeZone != null AND $sys.func.TO_NUMBER($sys.func.FORMAT_DATE($sys.func.NOW(), \"H\")) \u003e= 5 AND $sys.func.TO_NUMBER($sys.func.FORMAT_DATE($sys.func.NOW(), \"H\")) \u003c 12",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hey, $session.params.firstName, Good Morning!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "How are you feeling today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "chip_type": "mood",
+            "suggestion_chips": [ {
+              "text": "👍 Good",
+              "value": "Good"
+            }, {
+              "text": "👎 Not Good",
+              "value": "Not Good"
+            }, {
+              "text": "😐 Meh",
+              "value": "Meh"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Mood Check Page",
+    "name": "fee33cae-a2cf-4893-900e-1fe28c3ed769"
+  }, {
+    "condition": "$session.params.firstName != null AND $session.params.timeZone != null AND $sys.func.TO_NUMBER($sys.func.FORMAT_DATE($sys.func.NOW(), \"H\")) \u003e= 12 AND $sys.func.TO_NUMBER($sys.func.FORMAT_DATE($sys.func.NOW(), \"H\")) \u003c 18",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hey, $session.params.firstName, Good Afternoon!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "How are you feeling today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "chip_type": "mood",
+            "suggestion_chips": [ {
+              "text": "👍 Good",
+              "value": "Good"
+            }, {
+              "text": "👎 Not Good",
+              "value": "Not Good"
+            }, {
+              "text": "😐 Meh",
+              "value": "Meh"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Mood Check Page",
+    "name": "e01c6254-4a52-4b10-b47e-5c4d9fb05d5b"
+  }, {
+    "condition": "$session.params.firstName != null AND $session.params.timeZone != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hey, $session.params.firstName, Good Evening!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "How are you feeling today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "chip_type": "mood",
+            "suggestion_chips": [ {
+              "text": "👍 Good",
+              "value": "Good"
+            }, {
+              "text": "👎 Not Good",
+              "value": "Not Good"
+            }, {
+              "text": "😐 Meh",
+              "value": "Meh"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Mood Check Page",
+    "name": "66f02bd0-e27d-4085-99ef-440c672ad4f2"
+  }, {
+    "condition": "$session.params.firstName != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hey, $session.params.firstName, Good Day!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "How are you feeling today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "chip_type": "mood",
+            "suggestion_chips": [ {
+              "text": "👍 Good",
+              "value": "Good"
+            }, {
+              "text": "👎 Not Good",
+              "value": "Not Good"
+            }, {
+              "text": "😐 Meh",
+              "value": "Meh"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Mood Check Page",
+    "name": "96e6825d-5e65-4543-bb5f-bc3336ef6f43"
+  }, {
+    "condition": "$session.params.timeZone != null AND $sys.func.TO_NUMBER($sys.func.FORMAT_DATE($sys.func.NOW(), \"H\")) \u003e= 5 AND $sys.func.TO_NUMBER($sys.func.FORMAT_DATE($sys.func.NOW(), \"H\")) \u003c 12",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hey, Good Morning!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "How are you feeling today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "chip_type": "mood",
+            "suggestion_chips": [ {
+              "text": "👍 Good",
+              "value": "Good"
+            }, {
+              "text": "👎 Not Good",
+              "value": "Not Good"
+            }, {
+              "text": "😐 Meh",
+              "value": "Meh"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Mood Check Page",
+    "name": "3184bdaa-45a4-4694-bc3d-007669b8e6d0"
+  }, {
+    "condition": "$session.params.timeZone != null AND $sys.func.TO_NUMBER($sys.func.FORMAT_DATE($sys.func.NOW(), \"H\")) \u003e= 12 AND $sys.func.TO_NUMBER($sys.func.FORMAT_DATE($sys.func.NOW(), \"H\")) \u003c 18",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hey, Good Afternoon!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "How are you feeling today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "chip_type": "mood",
+            "suggestion_chips": [ {
+              "text": "👍 Good",
+              "value": "Good"
+            }, {
+              "text": "👎 Not Good",
+              "value": "Not Good"
+            }, {
+              "text": "😐 Meh",
+              "value": "Meh"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Mood Check Page",
+    "name": "fd9a157a-c392-4007-b90c-82e2cee448fa"
+  }, {
+    "condition": "$session.params.timeZone != null",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hey, Good Evening!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "How are you feeling today?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "chip_type": "mood",
+            "suggestion_chips": [ {
+              "text": "👍 Good",
+              "value": "Good"
+            }, {
+              "text": "👎 Not Good",
+              "value": "Not Good"
+            }, {
+              "text": "😐 Meh",
+              "value": "Meh"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Mood Check Page",
+    "name": "f68d4adf-ef4a-4053-8590-7a37c0d6db43"
+  }, {
+    "condition": "true",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hey, Good Day!" ]
+        },
+        "languageCode": "en"
+      }, {
+        "payload": {
+          "richContent": [ {
+            "chip_type": "mood",
+            "suggestion_chips": [ {
+              "text": "👍 Good",
+              "value": "Good"
+            }, {
+              "text": "👎 Not Good",
+              "value": "Not Good"
+            }, {
+              "text": "😐 Meh",
+              "value": "Meh"
+            } ],
+            "type": "chips"
+          } ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Mood Check Page",
+    "name": "3a5f505a-eb6c-4459-9ede-dd816f9cb867"
+  } ],
+  "description": "This page returns a greeting based on firstName and timeZone parameters."
+}

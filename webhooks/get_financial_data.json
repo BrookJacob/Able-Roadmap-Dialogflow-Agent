@@ -1,0 +1,12 @@
+{
+  "name": "bed18314-5e3a-4085-a4ed-815d56733c55",
+  "displayName": "get_financial_data",
+  "genericWebService": {
+    "uri": "https://us-central1-able-roadmap-ug4bop.cloudfunctions.net/getFinancialData",
+    "webhookType": "STANDARD",
+    "serviceAgentAuth": "ID_TOKEN"
+  },
+  "timeout": {
+    "seconds": 12
+  }
+}

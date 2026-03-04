@@ -1,0 +1,94 @@
+{
+  "name": "d74ef9cf-0114-4651-8844-c7fd21e0f160",
+  "displayName": "Event Add",
+  "description": "This tool schedules events based on user input. It can create a simple one-time event or a more complex repeating event series.\n\nFor a single event, it requires the event name, type, start date/time, and optionally an end date/time.\n\nTo create a repeating event, the tool must be provided with the repetition details, such as: frequency, interval, and an end date.\n\nThe function uses these details to generate all the individual event instances for the user's calendar.",
+  "toolType": "CUSTOMIZED_TOOL",
+  "functionSpec": {
+    "inputSchema": {
+      "properties": {
+        "endDateTime": {
+          "description": "Optional. The ending date and time of the event in ISO 8601 format. Required if the event is not all-day.",
+          "type": "string"
+        },
+        "eventName": {
+          "description": "The name or title of the event.",
+          "type": "string"
+        },
+        "eventType": {
+          "description": "The category or type of the event (e.g., 'Meeting', 'Appointment', 'Birthday').",
+          "type": "string"
+        },
+        "isAllDay": {
+          "description": "Set to true if the event lasts for the entire day. Defaults to false.",
+          "type": "boolean"
+        },
+        "isFromPlaybook": {
+          "description": "Whether or not this call is from a dialogflow playbook.",
+          "type": "boolean"
+        },
+        "isRepeating": {
+          "description": "Set to true if this is a recurring event. If true, the 'repetition' object is required.",
+          "type": "boolean"
+        },
+        "repetition": {
+          "description": "Contains the rules for a repeating event. Required if 'isRepeating' is true.",
+          "properties": {
+            "frequency": {
+              "description": "How often the event repeats.",
+              "enum": [ "Daily", "Weekly", "Monthly", "Yearly" ],
+              "type": "string"
+            },
+            "interval": {
+              "description": "The gap between repetitions (e.g., an interval of 2 with a 'Weekly' frequency means every 2 weeks).",
+              "type": "number"
+            },
+            "monthlyType": {
+              "description": "For 'Monthly' frequency, specifies how to repeat. 'dayOfWeek' repeats on the same week and day (e.g., the fourth Friday).",
+              "enum": [ "dayOfWeek" ],
+              "type": "string"
+            },
+            "weekdays": {
+              "description": "For 'Weekly' frequency, an array of numbers representing days of the week (0=Sunday, 1=Monday, ..., 6=Saturday).",
+              "items": {
+                "maximum": 6,
+                "minimum": 0,
+                "type": "number"
+              },
+              "type": "array"
+            }
+          },
+          "required": [ "frequency", "interval" ],
+          "type": "object"
+        },
+        "repetitionEndDate": {
+          "description": "Optional. The date when the repeating event series ends, in ISO 8601 format.",
+          "type": "string"
+        },
+        "startDate": {
+          "description": "The starting date and time of the event in ISO 8601 format (e.g., '2023-10-27T10:00:00Z').",
+          "type": "string"
+        },
+        "timeZone": {
+          "description": "An IANA time zone representing the user's current timezone",
+          "type": "string"
+        }
+      },
+      "required": [ "eventName", "eventType", "startDate", "isAllDay", "isRepeating", "isFromPlaybook", "timeZone" ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "message": {
+          "description": "A human-readable message describing the outcome, for example, 'Single event created.' or 'Repeating event series created.'",
+          "type": "string"
+        },
+        "status": {
+          "description": "Indicates the result of the operation, typically 'success'.",
+          "type": "string"
+        }
+      },
+      "required": [ "status", "message" ],
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "d9afda66-5455-48af-bce6-ed07d9efed98",
+  "displayName": "get_agenda",
+  "genericWebService": {
+    "uri": "https://us-central1-able-roadmap-ug4bop.cloudfunctions.net/getAgenda",
+    "webhookType": "STANDARD",
+    "serviceAgentAuth": "ID_TOKEN"
+  },
+  "timeout": {
+    "seconds": 20
+  }
+}

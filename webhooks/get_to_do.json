@@ -1,0 +1,12 @@
+{
+  "name": "d8d2e8eb-9f2a-48a2-a497-a9d550f3555f",
+  "displayName": "get_to_do",
+  "genericWebService": {
+    "uri": "https://us-central1-able-roadmap-ug4bop.cloudfunctions.net/getToDoData",
+    "webhookType": "STANDARD",
+    "serviceAgentAuth": "ID_TOKEN"
+  },
+  "timeout": {
+    "seconds": 12
+  }
+}

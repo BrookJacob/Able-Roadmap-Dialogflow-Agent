@@ -1,0 +1,26 @@
+{
+  "name": "e83a9ef3-fc1d-4c19-a14c-da67a8e201c6",
+  "displayName": "Financial Review Page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "webhook": "get_financial_data",
+    "tag": "get_financial_data",
+    "setParameterActions": [ {
+      "parameter": "triggerContinuationFlow",
+      "value": false
+    }, {
+      "parameter": "continuationFlow",
+      "value": false
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "To Do Review Page",
+    "name": "3efe06ac-84b9-456e-a4b4-df12e279bb91"
+  } ]
+}

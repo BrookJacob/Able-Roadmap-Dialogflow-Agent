@@ -1,0 +1,41 @@
+{
+  "name": "1c5cb853-0427-4c2a-b0e3-8a5b94d006ba",
+  "displayName": "ds_life_planning_and_productivity",
+  "description": "Use this data store to find practical advice on managing daily life, planning for the future, and improving productivity. It covers topics like time management, work-life balance, and making major life decisions.",
+  "dataStoreSpec": {
+    "dataStoreConnections": [ {
+      "dataStoreType": "UNSTRUCTURED",
+      "dataStore": "projects/542947590541/locations/global/collections/default_collection/dataStores/ds-life-planning-and-productivity_1753386481034",
+      "documentProcessingMode": "CHUNKS",
+      "engineType": "CHAT_ENGINE",
+      "connectorConfig": {
+      
+      },
+      "createTime": {
+        "seconds": 1753386481,
+        "nanos": 239692000
+      },
+      "displayName": "ds_life_planning_and_productivity",
+      "dialogflowAddTime": {
+        "seconds": 1753386648,
+        "nanos": 148000000
+      }
+    } ],
+    "models": {
+      "summarizationModel": {
+        "model": "default"
+      },
+      "rewriterModel": {
+        "model": "default"
+      }
+    },
+    "groundingSettings": {
+    
+    },
+    "payloadSettings": {
+    
+    },
+    "mode": "MODE_DEFAULT"
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

@@ -1,0 +1,71 @@
+{
+  "fallbackSettings": {
+    "selectedPrompt": "Default"
+  },
+  "generativeSafetySettings": {
+    "raiSettings": {
+      "categoryFilters": [ {
+        "category": "DANGEROUS_CONTENT",
+        "filterLevel": "BLOCK_FEW"
+      }, {
+        "category": "SEXUALLY_EXPLICIT_CONTENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HARASSMENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HATE_SPEECH",
+        "filterLevel": "BLOCK_SOME"
+      } ]
+    },
+    "defaultRaiSettings": {
+      "categoryFilters": [ {
+        "category": "DANGEROUS_CONTENT",
+        "filterLevel": "BLOCK_FEW"
+      }, {
+        "category": "SEXUALLY_EXPLICIT_CONTENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HARASSMENT",
+        "filterLevel": "BLOCK_SOME"
+      }, {
+        "category": "HATE_SPEECH",
+        "filterLevel": "BLOCK_SOME"
+      } ]
+    },
+    "defaultBannedPhraseMatchStrategy": "PARTIAL_MATCH",
+    "promptSecuritySettings": {
+      "enablePromptSecurity": true,
+      "sensitivityLevel": 3,
+      "minQueryLength": 15,
+      "model": "Default"
+    }
+  },
+  "languageCode": "en",
+  "knowledgeConnectorSettings": {
+    "business": "Able Roadmap",
+    "agent": "Able",
+    "agentIdentity": "Personal Assistant",
+    "agentScope": "with financial and executive functioning knowledge",
+    "groundingSettings": {
+      "groundingConfidence": "LOW"
+    },
+    "mainLlmConfig": {
+      "configSet": "gemini_20_flash_lite_001"
+    },
+    "enablePromptSecurity": true
+  },
+  "llmModelSettings": {
+    "model": "gemini-2.0-flash-001",
+    "parameters": {
+      "temperature": 1,
+      "inputTokenLimit": "INPUT_TOKEN_LIMIT_SHORT",
+      "outputTokenLimit": "OUTPUT_TOKEN_LIMIT_SHORT"
+    }
+  },
+  "playbookSettings": {
+    "memoryRetentionSettings": {
+      "contextWindow": "CONTEXT_WINDOW_INDEFINITE"
+    }
+  }
+}

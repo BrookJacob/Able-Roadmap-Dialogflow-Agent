@@ -1,0 +1,136 @@
+{
+  "name": "0abb5a0a-fc27-446b-8a27-f1443daf7fe4",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Okay! To add an event to your calendar, I'll need some information.\n\nFirst, what is the name of your event?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Homework"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "And what type of event is this? Is it for Work, Personal, School, or General?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "School"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Okay, and what is the start date and time for your homework?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Today at 10:15am."
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Okay, and will 'Homework' last all day?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "No"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "What date and time will 'Homework' end?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Today at 11:15am."
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Okay, and will this event repeat?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Yes"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Will this event repeat 'Daily', 'Weekly', 'Monthly', or 'Yearly'?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Daily"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "At what interval? (e.g. every day, every other day, every 3 days)"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Every other day"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "And when should the repeating event stop repeating?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "A month from now."
+    }
+  }, {
+    "toolUse": {
+      "tool": "Event Add",
+      "action": "Event Add",
+      "inputActionParameters": {
+        "functionParameter": {
+          "endDateTime": "2025-09-26T11:15:00Z",
+          "eventName": "Event B4",
+          "eventType": "Personal",
+          "isAllDay": false,
+          "isFromPlaybook": true,
+          "isRepeating": true,
+          "repetition": {
+            "frequency": "Daily",
+            "interval": 2
+          },
+          "repetitionEndDate": "2025-10-26T09:45:00Z",
+          "startDate": "2025-09-26T10:15:00Z",
+          "timeZone": "America/New_York"
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "message": "Repeating event series created.",
+          "status": "success"
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "You're all set. I've created your repeating event for you, called 'Homework'."
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "Default Start Flow",
+      "inputActionParameters": {
+        "continuationFlow": "true"
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "Preceding conversation goes over user's mood and current calendar before asking if the user wants to add an event to their calendar.",
+    "actionParameters": {
+    
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Customer wants to add a school event named Homework to the calendar which starts today at 10:15am and ends today at 11:15am, repeating every other day until a month from now.\n",
+    "actionParameters": {
+      "continuationFlow": "true"
+    }
+  },
+  "displayName": "Event Scheduler Event Add Repeating",
+  "retrievalStrategy": "DEFAULT",
+  "description": "This example covers using the Event Scheduler playbook for adding a repeating event using the Event Add function tool.",
+  "tokenCount": 816,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}
