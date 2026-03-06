@@ -1,0 +1,40 @@
+{
+  "name": "bc754a27-88f9-451d-9961-5515047dc818",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Welcome back. It's been a little while, but I'm glad you're here. Let's get re-oriented. I can help you bring things back into one place by:\n\nReviewing your daily agenda and financial balances.\n\nManaging to-do lists and scheduling calendar events.\n\nSaving \"Growth Notes\" to track your progress.\n\nAnswering questions on personal growth and executive functioning.\n\nWould you like to start your daily check-in now, or is there something else on your mind?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Yes, I need to check my agenda"
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "Default Start Flow",
+      "inputActionParameters": {
+        "readyForCheckin": "true"
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "A returning user is asking about Able's capabilities.",
+    "actionParameters": {
+      "intro_variant": "return"
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "User wants to check the agenda with the agent.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "The Returning User",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Demonstrate the \"welcome back\" variant after a 30-day absence.",
+  "tokenCount": 286,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

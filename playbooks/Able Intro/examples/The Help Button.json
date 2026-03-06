@@ -1,0 +1,40 @@
+{
+  "name": "49e2e80b-9c21-461d-af44-c744045682d2",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "I can definitely remind you of what I do. I build momentum through evidence, not hype. Specifically, I can help by:\n\nReviewing daily agendas and financial balances.\n\nManaging to-do lists and scheduling calendar events.\n\nSaving \"Growth Notes\" to track your progress.\n\nAnswering questions on personal growth and executive functioning.\n\nWould you like to start your daily check-in now, or is there something else on your mind?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Just the check-in for today."
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "Default Start Flow",
+      "inputActionParameters": {
+        "readyForCheckin": "true"
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "A user asks what the Able agent is capable of",
+    "actionParameters": {
+      "intro_variant": "help"
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Customer asked what agent can do and then asked for a check-in for the day.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "The Help Button",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Demonstrate how to answer when the user specifically asks for a reminder of features.",
+  "tokenCount": 277,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

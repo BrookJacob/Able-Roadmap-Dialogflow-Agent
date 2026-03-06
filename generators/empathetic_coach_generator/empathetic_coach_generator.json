@@ -12,6 +12,6 @@
     "topK": 40
   },
   "llmModelSettings": {
-    "model": "gemini-2.0-flash-lite-001"
+    "model": "gemini-2.5-flash-lite"
   }
 }

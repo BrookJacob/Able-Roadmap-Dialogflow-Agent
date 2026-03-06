@@ -8,6 +8,9 @@
     "setParameterActions": [ {
       "parameter": "trigger_greeting",
       "value": true
+    }, {
+      "parameter": "ready_for_checkin",
+      "value": null
     } ]
   },
   "transitionRoutes": [ {

@@ -4,7 +4,7 @@
   "description": "A start flow created along with the agent",
   "transitionRoutes": [ {
     "intent": "Default Welcome Intent",
-    "condition": "$session.params.continuationFlow = null OR $session.params.continuationFlow = false",
+    "condition": "$session.params.continuationFlow = null OR $session.params.continuationFlow = false OR $session.params.readyForCheckin = null OR $session.params.readyForCheckin = false",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
@@ -14,6 +14,20 @@
       } ]
     },
     "name": "edb6f2e8-790f-4d8a-b263-9063cbd6467a"
+  }, {
+    "intent": "faq.bot_capabilities",
+    "triggerFulfillment": {
+    
+    },
+    "name": "583dc06d-4658-4c5a-ab43-ad5ac996860d",
+    "targetPlaybook": "Able Intro"
+  }, {
+    "condition": "$session.params.readyForCheckin = true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Greeting Router Page",
+    "name": "e52edbdc-0b03-4585-8771-c328302701b0"
   }, {
     "condition": "$session.params.continuationFlow = true",
     "triggerFulfillment": {
@@ -25,7 +39,10 @@
   "eventHandlers": [ {
     "event": "sys.no-match-default",
     "triggerFulfillment": {
-      "enableGenerativeFallback": true
+      "enableGenerativeFallback": true,
+      "dataStore": {
+        "dataStoreTool": "projects/able-roadmap-ug4bop/locations/global/agents/eb760319-b786-4bad-abce-9a65be5c5add/tools/7618e9d4-ac58-45a0-af60-367c82f5df18"
+      }
     },
     "name": "a38754a7-ddb4-450e-89b3-5deddebaf9aa"
   }, {
@@ -49,6 +66,36 @@
       } ]
     },
     "name": "1b7bff33-a088-4042-8171-b39393ed8f6f"
+  }, {
+    "event": "start-intro-new",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intro_variant",
+        "value": "new"
+      } ]
+    },
+    "name": "14d73825-91be-4213-8ae8-883ed1377cee",
+    "targetPlaybook": "Able Intro"
+  }, {
+    "event": "start-intro-return",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intro_variant",
+        "value": "return"
+      } ]
+    },
+    "name": "f1dcc6a1-1839-4cb8-a958-e30b8b4a673f",
+    "targetPlaybook": "Able Intro"
+  }, {
+    "event": "start-intro-help",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "intro_variant",
+        "value": "help"
+      } ]
+    },
+    "name": "3ce78cb1-b92e-43db-aaac-449721af6f2b",
+    "targetPlaybook": "Able Intro"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",

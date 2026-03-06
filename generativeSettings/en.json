@@ -45,13 +45,13 @@
   "knowledgeConnectorSettings": {
     "business": "Able Roadmap",
     "agent": "Able",
-    "agentIdentity": "Personal Assistant",
-    "agentScope": "with financial and executive functioning knowledge",
+    "agentIdentity": "and calm, \"walking-beside-you\" mentor",
+    "agentScope": "by organizing their life and building momentum with evidence.",
     "groundingSettings": {
       "groundingConfidence": "LOW"
     },
     "mainLlmConfig": {
-      "configSet": "gemini_20_flash_lite_001"
+      "configSet": "gemini_25_flash_lite"
     },
     "enablePromptSecurity": true
   },
