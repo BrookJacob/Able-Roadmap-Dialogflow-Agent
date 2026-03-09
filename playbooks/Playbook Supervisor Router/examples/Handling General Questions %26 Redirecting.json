@@ -1,0 +1,34 @@
+{
+  "name": "705d3bf9-7c71-4952-8c54-c811c732f8ce",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "What can I help with today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "What is the point of tracking all this if I keep messing up my routines?"
+    }
+  }, {
+    "agentUtterance": {
+      "text": "The goal isn't flawless execution; it is about gathering data. Every time you miss a step in your routine, you learn something about where the friction is. We are building momentum through evidence, not perfection. Are you ready to return to your current coaching module to explore this a bit more?"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user has asked a question about what the point in tracking is if they keep messing up on their routine.",
+    "actionParameters": {
+    
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Agent explains the point of tracking routines even with mistakes, emphasizing data gathering and learning from friction, and asks if the user wants to return to the coaching module.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Handling General Questions \u0026 Redirecting",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Teach the AI to answer general coaching or philosophical questions thoughtfully, and then steer the user back to the Track 1 curriculum.",
+  "tokenCount": 216,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

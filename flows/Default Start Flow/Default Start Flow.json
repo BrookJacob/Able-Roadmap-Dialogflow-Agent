@@ -6,14 +6,10 @@
     "intent": "Default Welcome Intent",
     "condition": "$session.params.continuationFlow = null OR $session.params.continuationFlow = false OR $session.params.readyForCheckin = null OR $session.params.readyForCheckin = false",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Hi! How are you doing?", "Hello! How can I help you?", "Good day! What can I do for you today?", "Greetings! How can I assist?" ]
-        },
-        "languageCode": "en"
-      } ]
+    
     },
-    "name": "edb6f2e8-790f-4d8a-b263-9063cbd6467a"
+    "name": "edb6f2e8-790f-4d8a-b263-9063cbd6467a",
+    "targetPlaybook": "Playbook Supervisor Router"
   }, {
     "intent": "faq.bot_capabilities",
     "triggerFulfillment": {
@@ -113,7 +109,7 @@
     "languageCode": "en"
   } ],
   "inputParameterDefinitions": [ {
-    "name": "contiuationFlow",
+    "name": "continuationFlow",
     "description": "Determines whether the flow should route to a continuing page from where the playbook was called.",
     "typeSchema": {
       "inlineSchema": {
@@ -121,7 +117,21 @@
       }
     },
     "parameterType": {
-      "name": "contiuationFlow",
+      "name": "continuationFlow",
+      "openapiJsonSchema": {
+        "type": "boolean"
+      }
+    }
+  }, {
+    "name": "readyForCheckin",
+    "description": "Determines whether the flow should route to the start of the daily check in flow.",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "BOOLEAN"
+      }
+    },
+    "parameterType": {
+      "name": "readyForCheckin",
       "openapiJsonSchema": {
         "type": "boolean"
       }

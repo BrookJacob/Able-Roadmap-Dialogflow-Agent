@@ -1,0 +1,34 @@
+{
+  "name": "41904774-9d42-40f5-ab86-98f117282e28",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "What can I help you with today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I don't even know where to start today. I have too much going on."
+    }
+  }, {
+    "agentUtterance": {
+      "text": "It is completely normal to feel overwhelmed when everything is moving fast. We can take this one step at a time. Would you like to do a quick review of your agenda, or should we jump into your current coaching module to get grounded?"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user has asked a vague question.",
+    "actionParameters": {
+    
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Customer feels overwhelmed and agent offers to review the agenda or start a coaching module.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Clarifying Ambiguous Input",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Teach the AI not to guess if the user is completely vague, but to offer the core structured options.",
+  "tokenCount": 177,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

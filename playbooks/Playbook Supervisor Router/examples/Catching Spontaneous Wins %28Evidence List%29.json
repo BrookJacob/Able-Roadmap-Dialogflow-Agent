@@ -1,0 +1,50 @@
+{
+  "name": "9dc67198-4e5b-4ee4-888b-eb33b6c7fe3f",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "What can I help you with today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I finally finished that massive web development project for Pine Creek!"
+    }
+  }, {
+    "toolUse": {
+      "tool": "log_growth_note",
+      "action": "log_growth_note",
+      "inputActionParameters": {
+        "functionParameter": {
+          "category_tag": "Milestone",
+          "note_text": "Finished the Pine Creek web development project."
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "status": "Success: Growth note added to Evidence List."
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "That is a significant project to cross the finish line. I've safely logged this win to your Evidence List so we have a record of your momentum. What would you like to focus on next?"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user has written a spontaneous win.",
+    "actionParameters": {
+    
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Agent congratulates the customer on finishing a web development project and logs it to the customer's Evidence List.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Catching Spontaneous Wins (Evidence List)",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Teach the router to use the log_growth_note tool when the user shares a victory, rather than forcing them into a flow.",
+  "tokenCount": 276,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

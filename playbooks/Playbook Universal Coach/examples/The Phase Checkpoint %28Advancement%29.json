@@ -1,0 +1,70 @@
+{
+  "name": "3fad7ab4-5236-4025-b51d-56ecf677d62c",
+  "actions": [ {
+    "toolUse": {
+      "tool": "get_module_context",
+      "action": "get_module_context",
+      "inputActionParameters": {
+        "functionParameter": {
+          "module_number": 1,
+          "phase_number": 4
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "ai_tone_cue": "Gentle encouragement.",
+          "document_type": "Phase_Checkpoint",
+          "module_title": "I Can Begin",
+          "reflective_question": "What feels hardest to begin right now?"
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "You don’t have to have everything figured out to start. We’ll take this one step at a time together. What feels hardest to begin right now?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Believing that I can actually stick to a routine this time."
+    }
+  }, {
+    "toolUse": {
+      "tool": "advance_coaching_phase",
+      "action": "advance_coaching_phase",
+      "inputActionParameters": {
+        "functionParameter": {
+          "completed_phase": 1,
+          "narrative_anchor": "Believing they can stick to a routine."
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "status": "Success: Phase advanced to phase 2."
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "It is completely normal to feel that hesitation, but acknowledging it is the perfect place to start. I've logged that as your starting point, and we are officially moving forward. Would you like to review your agenda, or is there anything else you need?"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "User has completed their daily check-in and is now working through Track 1, Phase 1, Module 4 of Able Pathways",
+    "actionParameters": {
+      "currentModule": "4",
+      "currentPhase": "1"
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Customer feels hesitant about sticking to a routine, and the agent acknowledges it and offers to review the agenda.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "The Phase Checkpoint (Advancement)",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Teach the AI to use the advance_coaching_phase tool instead of the module completion tool when it hits a checkpoint.",
+  "tokenCount": 474,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

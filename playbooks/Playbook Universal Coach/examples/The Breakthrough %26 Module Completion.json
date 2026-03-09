@@ -1,0 +1,86 @@
+{
+  "name": "8eec5762-9a33-49de-8496-b28dc129d9b9",
+  "actions": [ {
+    "toolUse": {
+      "tool": "get_module_context",
+      "action": "get_module_context",
+      "inputActionParameters": {
+        "functionParameter": {
+          "module_number": 3,
+          "phase_number": 1
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "ai_tone_cue": "Encouraging.",
+          "document_type": "Module",
+          "module_title": "The First Step",
+          "reflective_question": "What is one tiny action you can take today?"
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Let's look at The First Step. What is one tiny action you can take today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I actually already did it! I cleaned off my entire desk this morning and it feels so much better to work here."
+    }
+  }, {
+    "toolUse": {
+      "tool": "log_growth_note",
+      "action": "log_growth_note",
+      "inputActionParameters": {
+        "functionParameter": {
+          "category_tag": "Habit",
+          "note_text": "Cleaned off entire desk and felt much better working there."
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "status": "Success: Growth note added to Evidence List."
+        }
+      }
+    }
+  }, {
+    "toolUse": {
+      "tool": "complete_module",
+      "action": "complete_module",
+      "inputActionParameters": {
+        "functionParameter": {
+          "module_name": "The First Step",
+          "module_takeaway": "User cleaned their desk."
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "status": "Success: Module marked as complete."
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "That is a fantastic win to start the day with! I've added that clean desk to your Evidence List and marked this module complete. Would you like to check your to-do list, or is there anything else you'd like to do?"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user has gone through their daily check-in and is now working through Track 1, Phase 1, Module 3 of Able Pathways.",
+    "actionParameters": {
+      "currentModule": "3",
+      "currentPhase": "1"
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Customer cleaned their desk and agent marked the module complete.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "The Breakthrough \u0026 Module Completion",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Teach the AI to trigger the log_growth_note tool alongside the completion tool when the user shares a win.",
+  "tokenCount": 572,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

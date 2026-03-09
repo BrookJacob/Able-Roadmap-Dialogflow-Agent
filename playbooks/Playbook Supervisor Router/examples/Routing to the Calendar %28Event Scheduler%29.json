@@ -1,0 +1,47 @@
+{
+  "name": "d0e64cec-8d3a-4538-a29d-4e82e9f565f2",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "What can I help you with today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Can you block out two hours tomorrow at 3 PM for me to focus on some freelance web development work?"
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "Event Scheduler",
+      "playbookInput": {
+        "precedingConversationSummary": "The user has asked to schedule a two hour block for tomorrow at 3PM to focus on some freelance web development work.",
+        "actionParameters": {
+        
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "The execution is successful.",
+        "actionParameters": {
+        
+        }
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user has just started the conversation.",
+    "actionParameters": {
+    
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Customer wants to block out two hours tomorrow at 3 PM.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Routing to the Calendar (Event Scheduler)",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Teach the router to recognize scheduling requests and hand off the session to the Event Scheduler playbook.",
+  "tokenCount": 244,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

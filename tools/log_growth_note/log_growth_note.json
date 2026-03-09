@@ -1,0 +1,36 @@
+{
+  "name": "90e30a77-45c5-47c2-8dec-cca193ac1644",
+  "displayName": "log_growth_note",
+  "description": "Logs a progress note, win, or realization to the user's Evidence List.",
+  "toolType": "CUSTOMIZED_TOOL",
+  "functionSpec": {
+    "inputSchema": {
+      "properties": {
+        "category_tag": {
+          "description": "Optional. A brief category tag for the note, such as 'Financial', 'Mindset', or 'Habit'.",
+          "type": "string"
+        },
+        "note_text": {
+          "description": "The actual text of the growth note, win, or realization the user wants to save to their Evidence List.",
+          "type": "string"
+        }
+      },
+      "required": [ "note_text" ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "error": {
+          "description": "Optional. A human-readable message describing what went wrong if the operation failed.",
+          "type": "string"
+        },
+        "status": {
+          "description": "Indicates the result of the operation. Returns a success string if the growth note was added.",
+          "type": "string"
+        }
+      },
+      "required": [ "status" ],
+      "type": "object"
+    }
+  }
+}

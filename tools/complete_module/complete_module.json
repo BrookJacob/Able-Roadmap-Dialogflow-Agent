@@ -1,0 +1,36 @@
+{
+  "name": "8967bb57-8bdf-49e3-80dc-7f2d2b12b8cf",
+  "displayName": "complete_module",
+  "description": "Marks a coaching module or micro-lesson as complete.",
+  "toolType": "CUSTOMIZED_TOOL",
+  "functionSpec": {
+    "inputSchema": {
+      "properties": {
+        "module_name": {
+          "description": "The specific name of the coaching module or micro-lesson being completed (e.g., 'Values \u0026 Identity').",
+          "type": "string"
+        },
+        "module_takeaway": {
+          "description": "A short, one-sentence summary of what the user learned, realized, or committed to in this module.",
+          "type": "string"
+        }
+      },
+      "required": [ "module_name", "module_takeaway" ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "error": {
+          "description": "Optional. A human-readable message describing what went wrong if the operation failed.",
+          "type": "string"
+        },
+        "status": {
+          "description": "Indicates the result of the operation. Returns a success string if the module was marked complete.",
+          "type": "string"
+        }
+      },
+      "required": [ "status" ],
+      "type": "object"
+    }
+  }
+}

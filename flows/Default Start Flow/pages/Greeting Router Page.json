@@ -9,7 +9,7 @@
       "parameter": "trigger_greeting",
       "value": true
     }, {
-      "parameter": "ready_for_checkin",
+      "parameter": "readyForCheckin",
       "value": null
     } ]
   },

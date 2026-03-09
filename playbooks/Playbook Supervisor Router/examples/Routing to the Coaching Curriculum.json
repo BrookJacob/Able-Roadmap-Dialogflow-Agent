@@ -1,0 +1,47 @@
+{
+  "name": "d42f7ab8-3e07-449a-80a5-d7bf225f6c2a",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "Hi, I'm Able. What is on your mind today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I have a few minutes and I'm ready to tackle my next coaching module."
+    }
+  }, {
+    "playbookInvocation": {
+      "playbook": "Playbook Universal Coach",
+      "playbookInput": {
+        "precedingConversationSummary": "The user has stated they want to tackle their next coaching module.",
+        "actionParameters": {
+        
+        }
+      },
+      "playbookOutput": {
+        "executionSummary": "The execution is successful.",
+        "actionParameters": {
+        
+        }
+      },
+      "playbookState": "OUTPUT_STATE_OK"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user has stated they want to tackle their next coaching module.",
+    "actionParameters": {
+    
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Customer is ready to start the next coaching module.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Routing to the Coaching Curriculum",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Teach the AI to route to the Coaching Curriculum Playbook.",
+  "tokenCount": 234,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

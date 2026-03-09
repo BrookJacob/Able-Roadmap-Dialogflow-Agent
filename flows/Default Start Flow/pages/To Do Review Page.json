@@ -7,5 +7,13 @@
   "entryFulfillment": {
     "webhook": "get_to_do",
     "tag": "get_to_do_data"
-  }
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+    
+    },
+    "name": "7f049578-9d46-4427-b109-a4bf412d71db",
+    "targetPlaybook": "Playbook Universal Coach"
+  } ]
 }

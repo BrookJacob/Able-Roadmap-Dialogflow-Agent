@@ -1,0 +1,10 @@
+{
+  "name": "28475371-ba40-43de-b028-fdc14bc4dd90",
+  "displayName": "confirmation.no",
+  "parameters": [ {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 5
+}

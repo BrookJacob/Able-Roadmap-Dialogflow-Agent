@@ -1,0 +1,45 @@
+{
+  "name": "bb8e2106-324b-49e1-87bd-a362ac26871c",
+  "displayName": "get_module_context",
+  "description": "Gather the module context to guide the playbook.",
+  "toolType": "CUSTOMIZED_TOOL",
+  "functionSpec": {
+    "inputSchema": {
+      "properties": {
+        "module_number": {
+          "description": "The user's current module within that phase.",
+          "type": "number"
+        },
+        "phase_number": {
+          "description": "The user's current coaching phase.",
+          "type": "number"
+        }
+      },
+      "required": [ "phase_number", "module_number" ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "ai_tone_cue": {
+          "type": "string"
+        },
+        "document_type": {
+          "type": "string"
+        },
+        "emotional_outcome": {
+          "type": "string"
+        },
+        "module_title": {
+          "type": "string"
+        },
+        "purpose": {
+          "type": "string"
+        },
+        "reflective_question": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

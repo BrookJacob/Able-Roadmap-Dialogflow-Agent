@@ -1,0 +1,72 @@
+{
+  "name": "6e96aecf-6589-4439-b66f-8c2c526a9b4e",
+  "actions": [ {
+    "toolUse": {
+      "tool": "get_module_context",
+      "action": "get_module_context",
+      "inputActionParameters": {
+        "functionParameter": {
+          "module_number": 2,
+          "phase_number": 1
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "ai_tone_cue": "Calm and practical.",
+          "document_type": "Module",
+          "emotional_outcome": "Relief.",
+          "module_title": "Your Life in One Place",
+          "purpose": "Establish Able as a home base.",
+          "reflective_question": "What is one thing that feels scattered right now?"
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "Welcome to the next step: Your Life in One Place. The goal here isn't deep organization yet, just establishing a central home base. Tell me, what is one thing that feels scattered right now?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "Probably my work notes, I have them across three different apps."
+    }
+  }, {
+    "toolUse": {
+      "tool": "complete_module",
+      "action": "complete_module",
+      "inputActionParameters": {
+        "functionParameter": {
+          "module_name": "Your Life in One Place",
+          "module_takeaway": "User feels their work notes are scattered across multiple apps."
+        }
+      },
+      "outputActionParameters": {
+        "functionParameter": {
+          "status": "Success: Module marked as complete."
+        }
+      }
+    }
+  }, {
+    "agentUtterance": {
+      "text": "That is incredibly common, and we will get those consolidated over time. I've safely logged your progress for this step. Would you like to review your to-do list now, or is there anything else on your mind today?"
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user went through their daily check-in and is now going through Track 1, Phase 1, Module 2 of Able Pathways.",
+    "actionParameters": {
+      "currentModule": "2",
+      "currentPhase": "1"
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Agent is helping user to consolidate work notes from three different apps into one place.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Standard Module Completion",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Teach the AI how to fetch a standard module and log its completion.",
+  "tokenCount": 504,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

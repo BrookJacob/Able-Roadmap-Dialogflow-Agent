@@ -1,0 +1,40 @@
+{
+  "name": "5fc4ffde-945f-45a8-8f95-d6b3249a7c95",
+  "actions": [ {
+    "agentUtterance": {
+      "text": "What can I help you with today?"
+    }
+  }, {
+    "userUtterance": {
+      "text": "I need to figure out what is on my agenda today and check my budget."
+    }
+  }, {
+    "flowInvocation": {
+      "flow": "Default Start Flow",
+      "inputActionParameters": {
+      
+      },
+      "outputActionParameters": {
+      
+      }
+    }
+  } ],
+  "playbookInput": {
+    "precedingConversationSummary": "The user has asked to review their agenda for the day and check their budget.",
+    "actionParameters": {
+    
+    }
+  },
+  "playbookOutput": {
+    "executionSummary": "Customer needs help figuring out their agenda and checking their budget.\n",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Routing to the Rituals (Default Start Flow)",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Teach the router to recognize requests for agendas, daily reviews, or financial checks, and transition them to the structured flow.",
+  "tokenCount": 186,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "en"
+}

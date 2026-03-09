@@ -1,0 +1,36 @@
+{
+  "name": "24ad2d75-3cba-4ea9-82ef-822abd218bed",
+  "displayName": "advance_coaching_phase",
+  "description": "Advances the user to the next major phase of the coaching program.",
+  "toolType": "CUSTOMIZED_TOOL",
+  "functionSpec": {
+    "inputSchema": {
+      "properties": {
+        "completed_phase": {
+          "description": "The integer number of the Track 1 phase that the user just finished (e.g., 1 for the Grounding phase).",
+          "type": "number"
+        },
+        "narrative_anchor": {
+          "description": "The user's specific starting point, friction point, or 'why' that they identified to begin this phase.",
+          "type": "string"
+        }
+      },
+      "required": [ "completed_phase", "narrative_anchor" ],
+      "type": "object"
+    },
+    "outputSchema": {
+      "properties": {
+        "error": {
+          "description": "Optional. A human-readable message describing what went wrong if the operation failed.",
+          "type": "string"
+        },
+        "status": {
+          "description": "Indicates the result of the operation. Returns a success string confirming the user was advanced to the next phase.",
+          "type": "string"
+        }
+      },
+      "required": [ "status" ],
+      "type": "object"
+    }
+  }
+}
